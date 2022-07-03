@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Bill Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="section">
+            <div id="formContainer">
+                <h1>Hospital Bill</h1>
+                    <header class="_form">
+                        
+                        <form action="" id="form" novalidate autocomplete="on">
+                            
+                        
+                            <label for="name">Patient Name</label>
+                            <input type="text" id="name" class="test" name="name" placeholder="Patient Name" autocomplete="on" >
+                            
+                            <label for="test">Type of test</label>
+                            <input type="text" id="test" class="test" name="test" placeholder="Enter type of test">
+            
+                            <button type="submit" >Submit</button>
+            
+                        </form>
+                    </header>
+            </div> 
+            
+            <div id="dataContainer">
+                <aside class="items">
+                    <h2>Hospital Facility</h2>
+                    <table id="table1" class="table1">
+                        <thead class="table1">
+                            <tr>
+                                <th>SL NO</th>
+                                <th>Hospital Facility</th>
+                                <th>Amount</th>
+                            </tr>
+        
+                        </thead>
+                        <tbody class="table1"></tbody>
+                    </table>
+                </aside>
+
+
+                <aside class="items">
+                    <h2>Patient Name</h2>
+                    <table id="table2Head" class = "table2">
+                        <thead class = "table2">
+                            <tr><th>Sl No</th>
+                                <th>Description</th>
+                                <th>Amount</th>
+                            </tr>
+        
+                        </thead>
+
+                        <tbody id="table2Body"class = "table2"></tbody>
+
+                    </table>
+
+
+                </aside>
+            </div>
+    </section>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
